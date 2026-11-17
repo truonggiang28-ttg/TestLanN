@@ -40,7 +40,18 @@ class MainActivity : AppCompatActivity() {
             txtMaLuot.text = "luot: ${stt}"
         }
     }
+    private fun xoa_2313(){
+        with(binding){
+            edtTen.error = null
+            edtSoLuong.error = null
 
+            edtTen.text.clear()
+            edtSoLuong.text.clear()
+
+            txtKetQua.text = "Ket qua: "
+            txtMaLuot.text = "Luot phieu: "
+        }
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
